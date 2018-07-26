@@ -62,23 +62,26 @@ Run `./gen-url-list-zeronet.sh`.
 
 ### Start a crawl
 
-Start point: from file:
+Start point: from file:<br>
 *path to url-list-random-zeronet-only.txt*
 
-Crawl depth:
+Crawl depth:<br>
 1 *(you can change this as you like)*
 
-Crawler Filter: Load Filter on URL's: must match:
-(http[s]?|ftp[s]?):\/\/[^\/]+\.bit\/.*
+Crawler Filter: Load Filter on URL's: must match:<br>
+`(http[s]?|ftp[s]?):\/\/[^\/]+\.bit\/.*`
 
-Document Filter: Filter on Content of Document: must not match
+Document Filter: Filter on Content of Document: must not match<br>
 *Feel free to blacklist whatever spam you like here.  This probably isn't critical if you're just running a search engine, but if you intend to use the Index Browser for research purposes, spam blocking might be important.*
 
-Double check rules: Reload 14 days *(change this if you like)*
+Double check rules:<br>
+Reload 14 days *(change this if you like)*
 
-Document Cache: Store to Web Cache: uncheck (might be needed to force the content blacklist to work?)
+Document Cache: Store to Web Cache:<br>
+uncheck (might be needed to force the content blacklist to work?)
 
-Index Attributes: index media: uncheck (might be needed to force the content blacklist to work?)
+Index Attributes: index media:<br>
+uncheck (might be needed to force the content blacklist to work?)
 
 ### Sit back and wait for it to index
 
