@@ -26,6 +26,10 @@ zeronet-ip4="127.0.0.1"
 only=true
 ~~~
 
+### Install DNSSEC-Trigger
+
+Configure DNSSEC-Trigger's Unbound instance to use ncdns for `bit.` as per the ncdns docs.
+
 ### Install ZeroNet
 
 Make sure you enable transproxy mode, but leave the default port.  Enable Tor if you like.
