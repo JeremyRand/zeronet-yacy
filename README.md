@@ -2,6 +2,8 @@
 
 This is a collection of scripts and instructions that can be used to set up a YaCy search engine instance that indexes ZeroNet sites.
 
+Note: Testing is being done with Debian Buster on ppc64le.
+
 ## Instructions
 
 ### Install YaCy
@@ -10,7 +12,7 @@ You can build YaCy from source; follow the instructions at [YaCy's GitHub](https
 
 ### Configure YaCy use case
 
-You want the "Intranet" use case.
+YaCy Administration -> First Steps -> Use Case & Account -> Basic Configuration -> Use Case -> Intranet Indexing.
 
 ### Install ncdns
 
