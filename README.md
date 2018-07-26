@@ -34,7 +34,13 @@ Configure DNSSEC-Trigger's Unbound instance to use ncdns for `bit.` as per the n
 
 ### Install ZeroNet
 
-Make sure you enable transproxy mode, but leave the default port.  Enable Tor if you like.
+Make sure you enable transproxy mode, but leave the default port, like this:
+
+~~~
+python2 zeronet.py --ui_trans_proxy
+~~~
+
+Enable Tor if you like.
 
 ### Install mitmproxy
 
