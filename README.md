@@ -16,6 +16,16 @@ You want the "Intranet" use case.
 
 Right now, you need to use the experimental ZeroNet+YaCy fork of ncdns, which supports converting `zeronet` records to `A` records and supports converting DNS zonefiles to URL lists.  This fork is a very bad thing, and you really shouldn't be using it.  Best to wait until we've gotten it cleaned up and merged to master branch.  *We do these experiments so you don't have to!  -- Brainiac: Science Abuse*
 
+Add the following in `ncdns.conf` and `ncdumpzone.conf`:
+
+~~~
+[noncompliance-experiments]
+
+zeronet=true
+zeronet-ip4="127.0.0.1"
+only=true
+~~~
+
 ### Install ZeroNet
 
 Make sure you enable transproxy mode, but leave the default port.  Enable Tor if you like.
@@ -71,3 +81,5 @@ Document Cache: Store to Web Cache: uncheck (might be needed to force the conten
 Index Attributes: index media: uncheck (might be needed to force the content blacklist to work?)
 
 ### Sit back and wait for it to index
+
+You can use the Crawler Monitor and the Index Browser in YaCy to track progress.
