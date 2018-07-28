@@ -10,6 +10,8 @@ Note: Testing is being done with Debian Buster on ppc64le.
 
 You can build YaCy from source; follow the instructions at [YaCy's GitHub](https://github.com/yacy/yacy_search_server).
 
+Note that for performance enhancements, you may want to use the experimental ZeroNet fork of YaCy.  In the future it should be possible to use upstream YaCy without those performance problems.
+
 ### Configure YaCy use case
 
 YaCy Administration -> First Steps -> Use Case & Account -> Basic Configuration -> Use Case -> Intranet Indexing.
