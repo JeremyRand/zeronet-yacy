@@ -14,6 +14,8 @@ You can build YaCy from source; follow the instructions at [YaCy's GitHub](https
 
 YaCy Administration -> First Steps -> Use Case & Account -> Basic Configuration -> Use Case -> Intranet Indexing.
 
+Then restart YaCy.
+
 ### Install ncdns
 
 Right now, you need to use the experimental ZeroNet+YaCy fork of ncdns, which supports converting `zeronet` records to `A` records and supports converting DNS zonefiles to URL lists.  This fork is a very bad thing, and you really shouldn't be using it.  Best to wait until we've gotten it cleaned up and merged to master branch.  *We do these experiments so you don't have to!  -- Brainiac: Science Abuse*
