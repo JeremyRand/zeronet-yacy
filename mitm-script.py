@@ -17,7 +17,7 @@ def request(flow):
     #print("User-Agent:", flow.request.headers["User-Agent"])
     is_yacy = "User-Agent" in flow.request.headers and "yacy" in flow.request.headers["User-Agent"].lower()
 
-    url = flow.request.pretty_url
+    url = flow.request.pretty_url.replace("127.0.0.1:81", flow.request.headers["Host"], 1)
 
     if not is_yacy:
         # This is probably a request from Firefox/Chromium looking for images or other subresources.  Just return a redirect.
@@ -62,6 +62,6 @@ def request(flow):
     else:
         responseCode = 200
 
-    flow.response = http.HTTPResponse.make(responseCode, ("<!DOCTYPE html>\n<html>\n" + html + "\n</html>").encode('utf-8'), {"Content-Type": "text/html"})
+    flow.response = http.HTTPResponse.make(responseCode, html.encode('utf-8'), {"Content-Type": "text/html"})
     #print("Replaced response")
 
