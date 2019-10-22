@@ -46,17 +46,29 @@ python2 zeronet.py --ui_trans_proxy
 
 Enable Tor if you like.
 
-### Install mitmproxy
+### Install mitmproxy and selenium
 
-`pip3 install --user mitmproxy`
+`sudo apt install mitmproxy python3-selenium`
 
-### Install Firefox
+### Install an HTML Renderer
+
+You can use either Firefox or WebKit.  Firefox is better tested at the moment.
+
+#### Firefox
+
+##### Install Firefox
 
 Must be ESR 52.  Anything else won't work.
 
-### Install cmdlnprint
+##### Install cmdlnprint
 
 You need the ZeroNet fork of cmdlnprint.  This probably means you need to disable XPI signature checking in Firefox.
+
+#### WebKit
+
+##### Install WebKit Selenium Backend
+
+`sudo apt install webkit2gtk-driver`
 
 ### Run mitmproxy
 
